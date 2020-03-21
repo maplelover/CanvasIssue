@@ -1,0 +1,16 @@
+<view class="page">
+  <view class="page-description">压缩图片 API</view>
+  <view class="page-section">
+    <view class="page-section-title">dd.compressImage</view>
+    <view class="page-section-demo">
+      <button type="primary" onTap="chooseImage">选择原图</button>
+      <view>原图：</view>
+      <image src="{{src}}" />
+      <button type="primary" onTap="compressImage">压缩图片</button>
+      <view>压缩后：</view>
+      <image src="{{compressedSrc}}" />
+    </view>
+  </view>
+</view>
+
+

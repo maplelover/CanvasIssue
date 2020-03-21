@@ -1,0 +1,25 @@
+<import src="/util/lifecycle.axml"/>
+<import src="/util/grid/index.axml"/>
+<import src="/util/items/index.axml"/>
+
+<view class="container" key="container">
+    <view class="slogon">
+        <image src="/image/logo.png" mode="scaleToFill" class="logo"/>
+        <view class="info">
+            <text class="desc">为你提供一些常用组件</text>
+        </view>
+    </view>
+    <template is="grid" data="{{...arr}}"/>
+</view>
+
+<template
+        is="items"
+        key="items"
+        data="{{hidden: hidden, list: arr.list[curIndex], onChildItemTap: arr.onChildItemTap, animMaskData, animContentData}}"
+/>
+
+<template
+        key="lifecycle"
+        is="lifecycle"
+        a:if="{{debug}}"
+/>

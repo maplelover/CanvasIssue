@@ -1,0 +1,12 @@
+.info-block {
+    width: 750rpx;
+    margin: 10rpx;
+}
+
+.tips-part {
+    font-size: 40rpx;
+}
+
+.content-part {
+    font-size: 30rpx;
+}

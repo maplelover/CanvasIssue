@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="canvas-view">
+    <!-- <f2 class="f2-chart" onInit="onInitChart"></f2> -->
+  </view>
+
+  <view class="canvas-view">
+    <ec-canvas class="mychart" id="mychart-dom-bar" canvas-id="mychart-bar" :ec="ec" onInit="onInit"></ec-canvas>
+  </view>
+
+    <!-- <view class="canvas-view">
+    <canvas 
+      id="canvas"
+      width="610"
+      height="610"
+      class="canvas"
+      onTouchStart="log"
+      onTouchMove="log"
+      onTouchEnd="log"
+    />
+  </view> -->
+</view>
+
+

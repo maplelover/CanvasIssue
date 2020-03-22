@@ -1,7 +1,6 @@
 // import * as echarts from "./echarts";
 import * as echarts from "./wx-echarts";
-// import mycontext from './my-context';
-import WxCanvas from "./wx-canvas";
+import MyCanvas from "./my-canvas";
 
 function wrapTouch(event) {
   for (let i = 0; i < event.touches.length; ++i) {
@@ -31,10 +30,7 @@ Component({
   didMount() {
     const id = `ec-canvas-${this.$id}`;
     const context = my.createCanvasContext(id);
-    // const myCtx = my.createCanvasContext(id);
-    // const context = mycontext(myCtx);
-
-    const canvas = new WxCanvas(context, id);
+    const canvas = new MyCanvas(context, id);
 
     echarts.setCanvasCreator(() => {
       return canvas;
@@ -58,19 +54,19 @@ Component({
         });
 
         if (typeof callback === 'function') {
-          self.chart = callback(canvas, res.width, res.height, canvasDpr);
+          self.chart = callback(canvas, width, height, canvasDpr);
         }
         else if (typeof self.props.onInit === 'function') {
-          self.chart = self.props.onInit(canvas, res.width, res.height, canvasDpr);
+          self.chart = self.props.onInit(canvas, width, height, canvasDpr);
         }
         else if (self.props.ec && typeof self.props.ec.onInit === 'function') {
-          self.chart = self.props.ec.onInit(canvas, res.width, res.height, canvasDpr);
+          self.chart = self.props.ec.onInit(canvas, width, height, canvasDpr);
         }
         else {
           self.triggerEvent('init', {
             canvas: canvas,
-            width: res.width,
-            height: res.height,
+            width: width,
+            height: height,
             canvasDpr: canvasDpr // 增加了dpr，可方便外面echarts.init
           });
         }

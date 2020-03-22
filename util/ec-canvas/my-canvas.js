@@ -32,12 +32,10 @@ export default class WxCanvas {
     }
 
     attachEvent() {
-      console.log(arguments);
         // noop
     }
 
     detachEvent() {
-      console.log(arguments);
         // noop
     }
 

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "page/map/index",
+    "page/bar/index",
     "page/component/canvas/canvas",
     "page/API/canvas/canvas",
     "page/component/index",

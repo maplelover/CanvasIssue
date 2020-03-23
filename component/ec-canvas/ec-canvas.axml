@@ -1,0 +1,13 @@
+<canvas
+  type="2d"
+  id="{{ canvasId }}"
+  canvas-id="{{ canvasId }}"
+  class="ec-canvas ec-canvas-{{ canvasId }}{{' ' + className || ''}}"
+  width="{{width}}"
+  height="{{height}}"
+  onTouchStart="{{ ec.disableTouch ? '' : 'touchStart' }}"
+  onTouchStart="{{ ec.disableTouch ? '' : 'touchStart' }}"
+  onTouchMove="{{ ec.disableTouch ? '' : 'touchMove' }}"
+  onTouchEnd="{{ ec.disableTouch ? '' : 'touchEnd' }}"
+  ref='saveChildRef0'
+/>

@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "中国",
+  "usingComponents": {
+    "ec-canvas": "/component/ec-canvas/ec-canvas"
+  }
+}

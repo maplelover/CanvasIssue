@@ -1,6 +1,0 @@
-{
-    "defaultTitle": "Canvas",
-    "usingComponents": {
-      "ec-canvas": "/util/ec-canvas/ec-canvas"
-    }
-}

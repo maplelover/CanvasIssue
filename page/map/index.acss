@@ -1,9 +1,0 @@
-/**index.wxss**/
-.ec-canvas {
-  width: 100%;
-  height: 700rpx;
-}
-
-#mychart-dom-area {
-  height: 700rpx;
-}

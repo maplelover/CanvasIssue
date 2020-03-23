@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@antv/my-f2": "^2.1.0",
     "echarts": "^4.7.0"
   }
 }

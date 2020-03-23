@@ -1,0 +1,6 @@
+{
+  "defaultTitle": "澳门",
+  "usingComponents": {
+    "ec-canvas": "/component/ec-canvas/ec-canvas"
+  }
+}

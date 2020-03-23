@@ -1,5 +1,0 @@
-<import src="../../components/collapse/index.axml" />
-
-<view>
-  <template is="Collapse" data={{...collapseData}} />
-</view>

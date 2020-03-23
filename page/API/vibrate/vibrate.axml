@@ -1,5 +1,0 @@
-<view class="page">
-  <button type="primary" onTap="vibrate">
-    点击震动手机
-  </button>
-</view>

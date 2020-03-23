@@ -1,8 +1,8 @@
 App({
   onLaunch(options) {
     console.log('App Launch', options);
-    console.log('getSystemInfoSync', dd.getSystemInfoSync());
-    console.log('SDKVersion', dd.SDKVersion);
+    console.log('getSystemInfoSync', my.getSystemInfoSync());
+    console.log('SDKVersion', my.SDKVersion);
   },
   onShow() {
     console.log('App Show');
